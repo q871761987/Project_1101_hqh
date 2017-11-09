@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="horizontal"
+       >
+
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="match_parent"
+           android:gravity="center"
+           android:orientation="vertical"
+           >
+           <ImageView
+               android:id="@+id/light"
+               android:src="@drawable/roadlamp_off"
+               android:layout_width="100dp"
+               android:layout_height="100dp" />
+           <Switch
+               android:layout_marginTop="10dp"
+               android:id="@+id/swith1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textOff="关"
+               android:textOn="开"
+               android:text="电灯开光"
+               />
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="match_parent"
+           android:gravity="center"
+           android:orientation="vertical"
+           >
+            <ImageView
+                android:id="@+id/fenshan"
+                android:src="@drawable/blower_off"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+           <Switch
+               android:id="@+id/swith2"
+               android:layout_marginTop="10dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="风扇开关"
+               android:textOn="开"
+               android:textOff="关"
+               />
+       </LinearLayout>
+   </LinearLayout>
+</LinearLayout>
